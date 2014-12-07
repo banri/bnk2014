@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  root 'comments#index'
+
+  # get 'comments/comfirm' => 'comments#index'
+  # post 'comments/comfirm' => 'comments#index'
+
+  get 'comments/comfirm' => 'comments#comfirm'
+  post 'comments/comfirm' => 'comments#comfirm'
+
+  get 'comments/complete' => 'comments#complete'
+  post 'comments/complete' => 'comments#complete'
+
+  get 'comments/theme/:id' => 'comments#theme'
+  post 'comments/theme/:id' => 'comments#theme'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

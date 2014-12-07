@@ -13,3 +13,284 @@
  *= require_tree .
  *= require_self
  */
+
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html{
+    overflow-y: scroll;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+input, textarea,{
+	margin: 0;
+	padding: 0;
+}
+
+ol, ul{
+    list-style:none;
+}
+
+table{
+    border-collapse: collapse; 
+    border-spacing:0;
+}
+
+caption, th{
+    text-align: left;
+}
+
+a:focus {
+	outline:none;
+}
+
+.clearfix:after {
+	content: "."; 
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	min-height: 1px;
+}
+
+* html .clearfix {
+	height: 1px;
+	/*¥*//*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+.both{
+	clear:both;
+}
+
+.inline_block {  
+	display: inline-block;  
+	*display: inline;  
+	*zoom: 1;  
+}
+
+
+header {
+	position: fixed !important;  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 80px;  
+    background-color: #FFF;  
+    color: #000;  
+}
+
+header img {
+	margin: 10px 100px;
+}
+
+footer {
+	position: fixed !important; 
+	width: 100%;  
+    height: 50px;  
+	background-color: #000; 
+	position: absolute; 
+	bottom: 0;
+	left: 0;
+}
+
+body{  
+    margin: 0;  
+    padding: 80px 0 50px 0;  
+    background-color: #FAFAFA; 
+    font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',Osaka,'ＭＳ Ｐゴシック',sans-serif; 
+}  
+
+html,body{
+    height: 100%;
+
+}
+
+#container {
+	/*position: relative;
+    height: 100%;
+    background-color: #FAFAFA;*/
+}
+
+#main {
+	padding-bottom: 80px;
+	overflow: auto;
+}
+
+#eyecatch {
+	height: 600px;
+	width: 100%;
+	min-width: 800px;
+	background: url("/assets/top.jpg") top center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+#title-area {
+	display: inline-block;
+	margin: 50px 0 0 150px;
+	float: left;
+	overflow: hidden;
+}
+
+.title {
+	color: #000;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+h1 {
+	color: #000;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+#contents {
+	width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 50px 30px 40px 30px;
+	background-color: #FFFFFF;
+}
+
+#copyright {
+	margin: 20px 100px 0 0;
+	color: #FFF;
+	font-size: 10px;
+	float: right;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+strong {
+	color: red;
+	font-weight: bold;
+}
+
+article {
+	margin-bottom: 40px;
+}
+
+.boke {
+	display: block;
+	margin: 10px auto;
+	height: 40px;
+	width: 500px;
+	font-size: 20px;
+	padding: 0px;
+}
+
+.name-area {
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+}
+
+.comfirm-area {
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+	font-size: 24px;
+}
+
+.name {
+	margin: 0 45px;
+	height: 24px;
+	width: 200px;
+	font-size: 20px;
+}
+
+ input[type="submit"] {
+	display: block;
+	border: solid 1px #AAAAAA;
+	margin: 10px auto;
+	padding: 15px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    color: #6495ED;
+    border-radius: 10px;        /* CSS3草案 */  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+	background-color: #FFFACD;
+	color: #FFA500;
+}
+
+.theme-list {
+	margin: 0 30px;
+	float:left;
+}
+
+.theme {
+	display: block;
+	margin: 30px auto;
+}
+
+.theme-top {
+	width: 100px;
+}
+
+input[type="button"] {
+	display: block;
+	border: solid 1px #AAAAAA;
+	margin: 10px auto;
+	padding: 15px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    color: #6495ED;
+    border-radius: 10px;        /* CSS3草案 */  
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px;
+}

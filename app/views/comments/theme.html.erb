@@ -1,0 +1,29 @@
+<!DOCKTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>お題その<%= @id %></title>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<a href="/"><img src="/assets/logo.png"/></a>
+		</header>
+		<div id="main">
+			<div id="contents">
+				<h1>お題その<%= @id%></h1>
+				<img class="theme" src="/assets/お題<%= @id %>.png" />
+				<%= form_tag( { controller: :comments, action: :comfirm}) do %>
+				<%= text_field_tag :comment, @comment, :class => "boke" %>
+				<div class="name-area">名前（必須）<%= text_field_tag :name, @name, :class => "name" %></div>
+				<%= hidden_field_tag 'id', @id %>
+				<%= submit_tag '確認', :class => "button" %>
+				<% end %>
+			</div>
+		</div>
+		<footer>
+			<p id="copyright">Copyright (C) 2014 Shinta Inoue</p>
+		</footer>
+	</div>
+</body>
+</html>
