@@ -294,3 +294,12 @@ input[type="button"] {
     -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
     -moz-border-radius: 10px;
 }
+
+.complete-area {
+	margin: 20px auto;
+	font-size: 18px;
+}
+
+.return {
+	margin: 20px auto;
+}

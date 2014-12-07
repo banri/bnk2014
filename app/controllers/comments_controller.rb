@@ -23,7 +23,7 @@ class CommentsController < ApplicationController
 		@comment.name = params[:name]
 		@comment.theme_num = params[:id]
 
-		@mesg = @comments.save! ? "投稿が完了しました。" : "投稿に失敗しました。再度投稿してください。" 
+		@msg = @comment.save! ? "投稿が完了しました。" : "投稿に失敗しました。再度投稿してください。" 
 		render :action => "complete"
 	end
 end
