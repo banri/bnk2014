@@ -1,4 +1,4 @@
-<!DOCKTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -12,6 +12,14 @@
 		<div id="main">
 			<div id="contents">
 				<h1>お題その<%= @id%></h1>
+				<br>
+				<% if @id=="1" then %>
+				<p>2014年７月に配属された神を名乗る新人！</p>
+				<% elsif @id == "2" %>
+				<p>2014年といえばやはり上場ですよね！</p>
+				<% else %>
+				<p>2014年に配属され、Pepperに変装して捕まる新人！</p>
+				<% end %>
 				<img class="theme" src="/assets/お題<%= @id %>.png" />
 				<%= form_tag( { controller: :comments, action: :comfirm}) do %>
 				<%= text_field_tag :comment, @comment, :class => "boke" %>
